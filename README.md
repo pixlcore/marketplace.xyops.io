@@ -1,11 +1,11 @@
-# xyOps Documentation Website Repo
+# xyOps Marketplace Website Repo
 
-This repository holds all the files for the `docs.xyops.io` website.
+This repository holds all the files for the `marketplace.xyops.io` website.
 
 It is designed as a [PoolNoodle App](https://github.com/jhuckaby/PoolNoodle#app-installer) and can be installed using the `noodle` CLI:
 
 ```sh
-noodle install github:pixlcore/docs.xyops.io#v1.0.0
+noodle install github:pixlcore/marketplace.xyops.io#latest
 ```
 
 # License
