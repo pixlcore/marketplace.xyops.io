@@ -1,0 +1,86 @@
+{
+	"name": "xyOps Marketplace",
+	"items_per_page": 100,
+	"ttl": 3600,
+	
+	"marked": {
+		"gfm": true,
+		"tables": true,
+		"breaks": false,
+		"pedantic": false,
+		"sanitize": false,
+		"smartLists": true,
+		"smartypants": false,
+		"silent": true,
+		"headerIds": true,
+		"mangle": false
+	},
+	
+	"Page": [ 
+		{ "ID": "Home" },
+		{ "ID": "Marketplace" } 
+	],
+	"DefaultPage": "Home",
+	
+	"marketplace": {
+		"enabled": true,
+		"metadata_url": "https://raw.githubusercontent.com/pixlcore/xyops-marketplace/refs/heads/main/marketplace.json",
+		"repo_url_template": "https://raw.githubusercontent.com/[id]/refs/tags/[version]/[filename]",
+		"ttl": 3600
+	},
+	
+	"sidebar_sections": [
+		{
+			"title": "Authors",
+			"icon": "account-multiple",
+			"field_key": "authors",
+			"search_key": "author",
+			"default_icon": "account"
+		},
+		{
+			"title": "Requirements",
+			"icon": "disc-player",
+			"field_key": "requires",
+			"search_key": "requires",
+			"default_icon": "floppy"
+		},
+		{
+			"title": "Licenses",
+			"icon": "scale-balance",
+			"field_key": "licenses",
+			"search_key": "license",
+			"default_icon": "license"
+		},
+		{
+			"title": "Tags",
+			"icon": "tag-multiple-outline",
+			"field_key": "tags",
+			"search_key": "tags",
+			"default_icon": "tag-outline"
+		}
+	],
+	
+	"ui": {
+		
+		"data_types": {
+			"alert": { "name": "alert", "list": "alerts", "icon": "bell-outline", "page": "AlertSetup" },
+			"api_key": { "name": "API key", "list": "api_keys", "icon": "key-variant", "page": "APIKeys" },
+			"category": { "name": "category", "list": "categories", "icon": "folder-open-outline", "page": "Categories" },
+			"channel": { "name": "channel", "list": "channels", "icon": "bullhorn-outline", "page": "Channels" },
+			"event": { "name": "event", "list": "events", "icon": "file-clock-outline", "page": "Events" },
+			"group": { "name": "group", "list": "groups", "icon": "server-network", "page": "Groups" },
+			"monitor": { "name": "monitor", "list": "monitors", "icon": "chart-line", "page": "Monitors" },
+			"plugin": { "name": "plugin", "list": "plugins", "icon": "power-plug-outline", "page": "Plugins" },
+			"tag": { "name": "tag", "list": "tags", "icon": "tag-outline", "page": "Tags" },
+			"web_hook": { "name": "web hook", "list": "web_hooks", "icon": "webhook", "page": "WebHooks" },
+			"bucket": { "name": "bucket", "list": "buckets", "icon": "pail-outline", "page": "Buckets" },
+			"secret": { "name": "secret", "list": "secrets", "icon": "shield-lock-outline", "page": "Secrets" },
+			"user": { "name": "user", "list": "users", "icon": "account", "page": "Users" },
+			"role": { "name": "role", "list": "roles", "icon": "account-group", "page": "Roles" }
+		},
+		
+		"dom": {},
+		"pages": {}
+		
+	}
+}
