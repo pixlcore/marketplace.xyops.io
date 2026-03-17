@@ -396,7 +396,7 @@ Page.Marketplace = class Marketplace extends Page.Base {
 		app.setWindowTitle( product.title );
 		app.setHeaderNav([
 			{ icon: 'cart-outline', loc: '#Marketplace?sub=search', title: 'Marketplace' },
-			{ icon: type_def.icon, loc: '#' + Nav.loc, title: product.title }
+			{ icon: type_def.icon, title: product.title }
 		]);
 		
 		// summary grid
