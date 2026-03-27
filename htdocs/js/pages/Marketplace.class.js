@@ -305,7 +305,7 @@ Page.Marketplace = class Marketplace extends Page.Base {
 		html += '<div class="box_content table">';
 		
 		html += this.getSortableTable( this.products, table_opts, function(product) {
-			var logo_url = app.base_api_url + '/app/marketplace?id=' + encodeURIComponent(product.id) + '&logo=1';
+			var logo_url = app.base_api_url + '/app/marketplace?id=' + encodeURIComponent(product.id) + '&logo=1&version=' + product.versions[0];
 			
 			var combo = `<div class="product_result" data-product="${product.id}" onClick="$P().doViewProduct(this)" style="background-image:url(${logo_url}">`;
 				combo += `<div class="product_title ellip">${product.title}</div>`;
